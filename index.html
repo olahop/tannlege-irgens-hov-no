@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tannlege Marit Irgens Hov</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background-color: #2d6dc4;
+      color: #ffffff;
+      line-height: 1.8;
+    }
+
+    /* ── Header ── */
+    header {
+      text-align: center;
+      padding: 3.5rem 1.5rem 2.5rem;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      opacity: 0.85;
+      font-style: italic;
+    }
+
+    /* ── Navigation ── */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+
+    nav a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      padding: 0.75rem 1.6rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    /* ── Sections ── */
+    section {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.25);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.4rem;
+    }
+
+    section p {
+      font-size: 1rem;
+      margin-bottom: 0.7rem;
+      opacity: 0.92;
+    }
+
+    /* ── Service list ── */
+    .service-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0;
+    }
+
+    .service-list li {
+      font-size: 1rem;
+      padding: 0.3rem 0;
+      opacity: 0.92;
+    }
+
+    /* ── NAV note ── */
+    .nav-note {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.4);
+      font-size: 0.97rem;
+      opacity: 0.88;
+    }
+
+    /* ── Contact grid ── */
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      text-align: left;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 560px) {
+      .info-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+
+    .info-block h3 {
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 0.6rem;
+    }
+
+    .info-block address,
+    .info-block p {
+      font-style: normal;
+      font-size: 0.97rem;
+      line-height: 1.7;
+      opacity: 0.9;
+    }
+
+    .info-block a {
+      color: #ffffff;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.82rem;
+      opacity: 0.55;
+      font-family: Arial, Helvetica, sans-serif;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Marit Irgens Hov</h1>
+    <p>Tannlege</p>
+  </header>
+
+  <nav>
+    <a href="#om">Om praksisen</a>
+    <a href="#behandling">Behandling</a>
+    <a href="#time">Bestill time</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section id="om">
+    <h2>Om praksisen</h2>
+    <p>
+      Velkommen til tannlegepraksis for Marit Irgens Hov. Her legger vi vekt på grundig behandling,
+      god informasjon og en trygg atmosfære — enten du kommer til rutinekontroll eller trenger mer
+      omfattende behandling.
+    </p>
+    <p>
+      Vi tar oss god tid til å bli kjent med deg og dine behov, og jobber for at besøket hos tannlegen
+      skal oppleves så enkelt og behagelig som mulig.
+    </p>
+  </section>
+
+  <section id="behandling">
+    <h2>Behandling</h2>
+    <p>Det tilbys et bredt spekter av behandlinger, blant annet:</p>
+    <ul class="service-list">
+      <li>Undersøkelse og forebyggende behandling</li>
+      <li>Tannrens og behandling av tannkjøttsykdom</li>
+      <li>Fyllinger og rotfylling</li>
+      <li>Kroner og broer</li>
+      <li>Proteser</li>
+      <li>Bittheving</li>
+      <li>Akutt tannbehandling og ekstraksjoner</li>
+      <li>Tannbleking</li>
+    </ul>
+    <p class="nav-note">
+      Marit hjelper deg med kostnadsoverslag til NAV-søknad for økonomisk sosialstønad ved nødvendig
+      tannbehandling. Ta kontakt, så utarbeides nødvendig dokumentasjon og du får veiledning i prosessen.
+    </p>
+  </section>
+
+  <section id="time">
+    <h2>Bestill time</h2>
+    <p>
+      Du kan bestille time ved å ringe oss i kontortiden, eller sende en e-post så tar vi kontakt
+      for å avtale tidspunkt.
+    </p>
+    <p>
+      Vi etterstreber å tilby time raskt, og forsøker alltid å finne et tidspunkt som passer deg.
+    </p>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt og åpningstider</h2>
+    <div class="info-grid">
+
+      <div class="info-block">
+        <h3>Kontaktinformasjon</h3>
+        <address>
+          Tannlege Marit Irgens Hov<br>
+          [Adresse]<br>
+          [Postnummer og sted]<br><br>
+          Tlf: <a href="tel:+4700000000">[telefonnummer]</a><br>
+          E-post: <a href="mailto:post@irgens-hov.no">[e-postadresse]</a>
+        </address>
+      </div>
+
+      <div class="info-block">
+        <h3>Åpningstider</h3>
+        <p>
+          Mandag – fredag: 08.00 – 16.00<br>
+          Lørdag – søndag: Stengt
+        </p>
+        <p style="margin-top: 0.8rem;">
+          Ved tannlegevakt utenom åpningstid, ring den kommunale tannlegevakten i ditt område.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Tannlege Marit Irgens Hov
+  </footer>
+
+</body>
+</html>
