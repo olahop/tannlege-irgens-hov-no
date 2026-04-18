@@ -1,254 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="no">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tannlege Marit Irgens Hov</title>
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tannlege Marit Irgens Hov – Frogner Oslo &amp; Harestua</title>
 
-    body {
-      font-family: Georgia, 'Times New Roman', serif;
-      background-color: #2d6dc4;
-      color: #ffffff;
-      line-height: 1.8;
-    }
+    <!-- SEO meta tags -->
+    <meta
+      name="description"
+      content="Tannlege Marit Irgens Hov tilbyr undersøkelse, tannrens, fyllinger, kroner, proteser, bleking og akutt tannbehandling på Frogner i Oslo og Harestua i Lunner. Bestill time i dag."
+    />
+    <meta
+      name="keywords"
+      content="tannlege Oslo, tannlege Frogner, tannlege Harestua, tannlege Lunner, Marit Irgens Hov, tannlegepraksis, tannbehandling, tannrens, tannbleking, rotfylling"
+    />
+    <meta name="author" content="Marit Irgens Hov" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://tannlege-irgens-hov.no/" />
+    <meta name="google-site-verification" content="IJpPshP6SVjwxFJTeJblJgcCYdwNJYdZSg1Rqd70PnU" />
 
-    /* ── Header ── */
-    header {
-      text-align: center;
-      padding: 3.5rem 1.5rem 2.5rem;
-    }
+    <!-- Open Graph (social sharing) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tannlege-irgens-hov.no/" />
+    <meta property="og:title" content="Tannlege Marit Irgens Hov – Frogner Oslo &amp; Harestua" />
+    <meta
+      property="og:description"
+      content="Tannlegepraksis på Frogner i Oslo og Harestua i Lunner. Grundig behandling, god informasjon og en trygg atmosfære."
+    />
+    <meta property="og:image" content="https://tannlege-irgens-hov.no/marit.jpg" />
+    <meta property="og:locale" content="nb_NO" />
 
-    header h1 {
-      font-size: 2.2rem;
-      font-weight: bold;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.1rem;
-      opacity: 0.85;
-      font-style: italic;
-    }
-
-    /* ── Navigation ── */
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      border-top: 1px solid rgba(255,255,255,0.3);
-      border-bottom: 1px solid rgba(255,255,255,0.3);
-    }
-
-    nav a {
-      color: rgba(255,255,255,0.85);
-      text-decoration: none;
-      padding: 0.75rem 1.6rem;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.9rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      transition: color 0.2s;
-    }
-
-    nav a:hover {
-      color: #ffffff;
-    }
-
-    /* ── Sections ── */
-    section {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 3rem 1.5rem;
-      text-align: center;
-      border-bottom: 1px solid rgba(255,255,255,0.25);
-    }
-
-    section:last-of-type {
-      border-bottom: none;
-    }
-
-    section h2 {
-      font-size: 1.5rem;
-      font-weight: bold;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 1.4rem;
-    }
-
-    section p {
-      font-size: 1rem;
-      margin-bottom: 0.7rem;
-      opacity: 0.92;
-    }
-
-    /* ── Service list ── */
-    .service-list {
-      list-style: none;
-      padding: 0;
-      margin: 1rem 0 0;
-    }
-
-    .service-list li {
-      font-size: 1rem;
-      padding: 0.3rem 0;
-      opacity: 0.92;
-    }
-
-    /* ── NAV note ── */
-    .nav-note {
-      margin-top: 2rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(255,255,255,0.4);
-      font-size: 0.97rem;
-      opacity: 0.88;
-    }
-
-    /* ── Contact grid ── */
-    .info-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      text-align: left;
-      margin-top: 0.5rem;
-    }
-
-    @media (max-width: 560px) {
-      .info-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
+    <!-- Structured data – LocalBusiness / Dentist -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Dentist",
+            "@id": "https://tannlege-irgens-hov.no/#frogner",
+            "name": "Tannlege Marit Irgens Hov – Frogner",
+            "url": "https://tannlege-irgens-hov.no/",
+            "description": "Tannlegepraksis på Frogner i Oslo. Grundig behandling og en trygg atmosfære.",
+            "image": "https://tannlege-irgens-hov.no/marit.jpg",
+            "priceRange": "$$",
+            "openingHours": "Mo-Fr 08:00-16:00",
+            "telephone": "+4722448613",
+            "email": "kontakt@tannlege-irgens-hov.no",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Bygdøy Allé 58B",
+              "postalCode": "0265",
+              "addressLocality": "Oslo",
+              "addressCountry": "NO"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 59.9138,
+              "longitude": 10.7003
+            },
+            "areaServed": ["Oslo", "Frogner"],
+            "employee": {
+              "@type": "Person",
+              "name": "Marit Irgens Hov",
+              "jobTitle": "Tannlege"
+            }
+          },
+          {
+            "@type": "Dentist",
+            "@id": "https://tannlege-irgens-hov.no/#harestua",
+            "name": "Tannlege Marit Irgens Hov – Harestua",
+            "url": "https://tannlege-irgens-hov.no/",
+            "description": "Tannlegepraksis på Harestua i Lunner. Grundig behandling og en trygg atmosfære.",
+            "image": "https://tannlege-irgens-hov.no/marit.jpg",
+            "priceRange": "$$",
+            "openingHours": "Mo-Fr 08:00-16:00",
+            "telephone": "+4761323070",
+            "email": "harestuatannklinikk@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Vannebos veg 159",
+              "postalCode": "2743",
+              "addressLocality": "Harestua",
+              "addressCountry": "NO"
+            },
+            "areaServed": ["Harestua", "Lunner", "Gran"],
+            "employee": {
+              "@type": "Person",
+              "name": "Marit Irgens Hov",
+              "jobTitle": "Tannlege"
+            }
+          }
+        ]
       }
-    }
+    </script>
 
-    .info-block h3 {
-      font-size: 0.85rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      opacity: 0.7;
-      margin-bottom: 0.6rem;
-    }
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <meta name="theme-color" content="#3a71aa" />
+    <meta http-equiv="cache-control" content="max-age=31536000" />
 
-    .info-block address,
-    .info-block p {
-      font-style: normal;
-      font-size: 0.97rem;
-      line-height: 1.7;
-      opacity: 0.9;
-    }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
 
-    .info-block a {
-      color: #ffffff;
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
+    <!-- Preload critical resources for LCP and faster rendering -->
+    <link rel="preload" as="image" href="marit.webp" type="image/webp" />
+    <link rel="prefetch" href="styles.css" />
 
-    /* ── Footer ── */
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.82rem;
-      opacity: 0.55;
-      font-family: Arial, Helvetica, sans-serif;
-      border-top: 1px solid rgba(255,255,255,0.2);
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Marit Irgens Hov</h1>
-    <p>Tannlege</p>
-  </header>
-
-  <nav>
-    <a href="#om">Om praksisen</a>
-    <a href="#behandling">Behandling</a>
-    <a href="#time">Bestill time</a>
-    <a href="#kontakt">Kontakt</a>
-  </nav>
-
-  <section id="om">
-    <h2>Om praksisen</h2>
-    <p>
-      Velkommen til tannlegepraksis for Marit Irgens Hov. Her legger vi vekt på grundig behandling,
-      god informasjon og en trygg atmosfære — enten du kommer til rutinekontroll eller trenger mer
-      omfattende behandling.
-    </p>
-    <p>
-      Vi tar oss god tid til å bli kjent med deg og dine behov, og jobber for at besøket hos tannlegen
-      skal oppleves så enkelt og behagelig som mulig.
-    </p>
-  </section>
-
-  <section id="behandling">
-    <h2>Behandling</h2>
-    <p>Det tilbys et bredt spekter av behandlinger, blant annet:</p>
-    <ul class="service-list">
-      <li>Undersøkelse og forebyggende behandling</li>
-      <li>Tannrens og behandling av tannkjøttsykdom</li>
-      <li>Fyllinger og rotfylling</li>
-      <li>Kroner og broer</li>
-      <li>Proteser</li>
-      <li>Bittheving</li>
-      <li>Akutt tannbehandling og ekstraksjoner</li>
-      <li>Tannbleking</li>
-    </ul>
-    <p class="nav-note">
-      Marit hjelper deg med kostnadsoverslag til NAV-søknad for økonomisk sosialstønad ved nødvendig
-      tannbehandling. Ta kontakt, så utarbeides nødvendig dokumentasjon og du får veiledning i prosessen.
-    </p>
-  </section>
-
-  <section id="time">
-    <h2>Bestill time</h2>
-    <p>
-      Du kan bestille time ved å ringe oss i kontortiden, eller sende en e-post så tar vi kontakt
-      for å avtale tidspunkt.
-    </p>
-    <p>
-      Vi etterstreber å tilby time raskt, og forsøker alltid å finne et tidspunkt som passer deg.
-    </p>
-  </section>
-
-  <section id="kontakt">
-    <h2>Kontakt og åpningstider</h2>
-    <div class="info-grid">
-
-      <div class="info-block">
-        <h3>Kontaktinformasjon</h3>
-        <address>
-          Tannlege Marit Irgens Hov<br>
-          [Adresse]<br>
-          [Postnummer og sted]<br><br>
-          Tlf: <a href="tel:+4700000000">[telefonnummer]</a><br>
-          E-post: <a href="mailto:post@irgens-hov.no">[e-postadresse]</a>
-        </address>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#" class="site-brand">
+          <span class="brand-name">Marit Irgens Hov</span>
+          <span class="brand-sub">Tannlege</span>
+        </a>
       </div>
+    </header>
 
-      <div class="info-block">
-        <h3>Åpningstider</h3>
-        <p>
-          Mandag – fredag: 08.00 – 16.00<br>
-          Lørdag – søndag: Stengt
-        </p>
-        <p style="margin-top: 0.8rem;">
-          Ved tannlegevakt utenom åpningstid, ring den kommunale tannlegevakten i ditt område.
-        </p>
+    <main>
+    <section id="om" class="fade-up">
+      <img
+        src="marit.webp"
+        alt="Tannlege Marit Irgens Hov"
+        class="dentist-photo"
+        width="280"
+        height="280"
+        fetchpriority="high"
+      />
+      <h1 class="hero-title">Trygg tannbehandling<span class="hero-sub">— med omtanke</span></h1>
+      <p>
+        Hos Marit møter du en erfaren og omsorgsfull tannlege som setter din
+        tannhelse og trygghet i fokus. Du får moderne tannbehandling i trygge
+        omgivelser — enten du trenger en vanlig kontroll, akutt hjelp eller mer
+        avansert behandling.
+      </p>
+      <p class="location-note">Marit jobber på Frogner i Oslo og på Harestua i Lunner.</p>
+    </section>
+
+    <section id="behandling" class="fade-up">
+      <h2>Behandling</h2>
+      <p>Det tilbys et bredt spekter av behandlinger, blant annet:</p>
+      <ul class="service-list">
+        <li>Undersøkelse og forebyggende behandling</li>
+        <li>Tannrens og behandling av tannkjøttsykdom</li>
+        <li>Fyllinger og rotfylling</li>
+        <li>Kroner og broer</li>
+        <li>Proteser</li>
+        <li>Bittheving</li>
+        <li>Akutt tannbehandling og ekstraksjoner</li>
+        <li>Tannbleking</li>
+      </ul>
+      <div class="nav-note">
+        Marit hjelper deg med kostnadsoverslag til NAV-søknad for økonomisk
+        sosialstønad ved nødvendig tannbehandling. Ta kontakt, så utarbeides
+        nødvendig dokumentasjon og du får veiledning i prosessen.
       </div>
+    </section>
 
-    </div>
-  </section>
+    <section id="time" class="fade-up">
+      <h2>Bestill time</h2>
+      <p>
+        Du kan bestille time ved å ringe oss i kontortiden, eller sende en
+        e-post så tar vi kontakt for å avtale tidspunkt.
+      </p>
+      <p>
+        Vi etterstreber å tilby time raskt, og forsøker alltid å finne et
+        tidspunkt som passer deg.
+      </p>
+    </section>
 
-  <footer>
-    &copy; 2026 Tannlege Marit Irgens Hov
-  </footer>
+    <section id="kontakt" class="fade-up">
+      <h2>Kontaktinformasjon</h2>
+      <div class="info-grid">
+        <div class="info-block">
+          <h3>Frogner</h3>
+          <address>
+            Tannlege Elisabeth Aurstad Riksen AS<br />
+            Bygdøy Allé 58B, 0265 Oslo<br /><br />
+            Tlf: <a href="tel:22448613">22 44 86 13</a><br />
+            E-post: <a href="mailto:tannlege-mih@outlook.com">tannlege-mih@outlook.com</a>
+          </address>
+        </div>
 
-</body>
+        <div class="info-block">
+          <h3>Harestua</h3>
+          <address>
+            Harestua tannklinikk<br />
+            Vannebos veg 159, 2743 Harestua<br /><br />
+            Tlf: <a href="tel:61323070">61 32 30 70</a><br />
+            E-post: <a href="mailto:harestuatannklinikk@gmail.com">harestuatannklinikk@gmail.com</a>
+          </address>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+    <footer>&copy; 2026 Tannlege Marit Irgens Hov</footer>
+
+    <script src="script.js" defer></script>
+  </body>
 </html>
