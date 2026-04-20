@@ -22,6 +22,7 @@
     <!-- Open Graph (social sharing) -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tannlege-irgens-hov.no/" />
+    <meta property="og:site_name" content="Tannlege Marit Irgens Hov" />
     <meta property="og:title" content="Tannlege Marit Irgens Hov – Frogner Oslo &amp; Harestua" />
     <meta
       property="og:description"
@@ -30,11 +31,17 @@
     <meta property="og:image" content="https://tannlege-irgens-hov.no/marit.jpg" />
     <meta property="og:locale" content="nb_NO" />
 
-    <!-- Structured data – LocalBusiness / Dentist -->
+    <!-- Structured data – WebSite + LocalBusiness / Dentist -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://tannlege-irgens-hov.no/#website",
+            "name": "Tannlege Marit Irgens Hov",
+            "url": "https://tannlege-irgens-hov.no/"
+          },
           {
             "@type": "Dentist",
             "@id": "https://tannlege-irgens-hov.no/#frogner",
@@ -98,6 +105,8 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#3a71aa" />
     <meta http-equiv="cache-control" content="max-age=31536000" />
 
