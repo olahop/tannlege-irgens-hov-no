@@ -110,13 +110,12 @@
     <meta name="theme-color" content="#3a71aa" />
     <meta http-equiv="cache-control" content="max-age=31536000" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
+    <!-- Preload self-hosted fonts (eliminates render-blocking Google Fonts) -->
+    <link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-600.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-italic-400.woff2" crossorigin />
 
-    <!-- Preload critical resources for LCP and faster rendering -->
+    <!-- Preload LCP image -->
     <link rel="preload" as="image" href="marit.webp" type="image/webp" />
-    <link rel="prefetch" href="styles.css" />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -136,8 +135,8 @@
         src="marit.webp"
         alt="Tannlege Marit Irgens Hov"
         class="dentist-photo"
-        width="280"
-        height="280"
+        width="400"
+        height="533"
         fetchpriority="high"
       />
       <h1 class="hero-title">Trygg tannbehandling<span class="hero-sub">— med omtanke</span></h1>
