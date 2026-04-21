@@ -3,35 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tannlege Marit Irgens Hov – Frogner Oslo &amp; Harestua</title>
+    <title>Tannlege Marit Irgens Hov | Frogner & Harestua</title>
 
     <!-- SEO meta tags -->
     <meta
       name="description"
       content="Tannlege Marit Irgens Hov tilbyr undersøkelse, tannrens, fyllinger, kroner, proteser, bleking og akutt tannbehandling på Frogner i Oslo og Harestua i Lunner. Bestill time i dag."
     />
-    <meta
-      name="keywords"
-      content="tannlege Oslo, tannlege Frogner, tannlege Harestua, tannlege Lunner, Marit Irgens Hov, tannlegepraksis, tannbehandling, tannrens, tannbleking, rotfylling"
-    />
     <meta name="author" content="Marit Irgens Hov" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://tannlege-irgens-hov.no/" />
-    <meta name="google-site-verification" content="IJpPshP6SVjwxFJTeJblJgcCYdwNJYdZSg1Rqd70PnU" />
+    <meta
+      name="google-site-verification"
+      content="IJpPshP6SVjwxFJTeJblJgcCYdwNJYdZSg1Rqd70PnU"
+    />
 
-    <!-- Open Graph (social sharing) -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tannlege-irgens-hov.no/" />
     <meta property="og:site_name" content="Tannlege Marit Irgens Hov" />
-    <meta property="og:title" content="Tannlege Marit Irgens Hov – Frogner Oslo &amp; Harestua" />
+    <meta
+      property="og:title"
+      content="Tannlege Marit Irgens Hov | Frogner & Harestua"
+    />
     <meta
       property="og:description"
       content="Tannlegepraksis på Frogner i Oslo og Harestua i Lunner. Grundig behandling, god informasjon og en trygg atmosfære."
     />
-    <meta property="og:image" content="https://tannlege-irgens-hov.no/marit.jpg" />
+    <meta
+      property="og:image"
+      content="https://tannlege-irgens-hov.no/marit.jpg"
+    />
     <meta property="og:locale" content="nb_NO" />
 
-    <!-- Structured data – WebSite + LocalBusiness / Dentist -->
+    <!-- Structured data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -40,19 +45,28 @@
             "@type": "WebSite",
             "@id": "https://tannlege-irgens-hov.no/#website",
             "name": "Tannlege Marit Irgens Hov",
+            "alternateName": "Tannlege Irgens Hov",
             "url": "https://tannlege-irgens-hov.no/"
           },
           {
             "@type": "Dentist",
-            "@id": "https://tannlege-irgens-hov.no/#frogner",
-            "name": "Tannlege Marit Irgens Hov – Frogner",
+            "@id": "https://tannlege-irgens-hov.no/#business",
+            "name": "Tannlege Marit Irgens Hov",
             "url": "https://tannlege-irgens-hov.no/",
-            "description": "Tannlegepraksis på Frogner i Oslo. Grundig behandling og en trygg atmosfære.",
             "image": "https://tannlege-irgens-hov.no/marit.jpg",
             "priceRange": "$$",
-            "openingHours": "Mo-Fr 08:00-16:00",
-            "telephone": "+4722448613",
-            "email": "kontakt@tannlege-irgens-hov.no",
+            "employee": {
+              "@type": "Person",
+              "name": "Marit Irgens Hov",
+              "jobTitle": "Tannlege"
+            }
+          },
+          {
+            "@type": "Dentist",
+            "name": "Tannlege Marit Irgens Hov",
+            "branchOf": {
+              "@id": "https://tannlege-irgens-hov.no/#business"
+            },
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Bygdøy Allé 58B",
@@ -60,29 +74,14 @@
               "addressLocality": "Oslo",
               "addressCountry": "NO"
             },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 59.9138,
-              "longitude": 10.7003
-            },
-            "areaServed": ["Oslo", "Frogner"],
-            "employee": {
-              "@type": "Person",
-              "name": "Marit Irgens Hov",
-              "jobTitle": "Tannlege"
-            }
+            "telephone": "+4722448613"
           },
           {
             "@type": "Dentist",
-            "@id": "https://tannlege-irgens-hov.no/#harestua",
-            "name": "Tannlege Marit Irgens Hov – Harestua",
-            "url": "https://tannlege-irgens-hov.no/",
-            "description": "Tannlegepraksis på Harestua i Lunner. Grundig behandling og en trygg atmosfære.",
-            "image": "https://tannlege-irgens-hov.no/marit.jpg",
-            "priceRange": "$$",
-            "openingHours": "Mo-Fr 08:00-16:00",
-            "telephone": "+4761323070",
-            "email": "harestuatannklinikk@gmail.com",
+            "name": "Tannlege Marit Irgens Hov",
+            "branchOf": {
+              "@id": "https://tannlege-irgens-hov.no/#business"
+            },
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Vannebos veg 159",
@@ -90,12 +89,7 @@
               "addressLocality": "Harestua",
               "addressCountry": "NO"
             },
-            "areaServed": ["Harestua", "Lunner", "Gran"],
-            "employee": {
-              "@type": "Person",
-              "name": "Marit Irgens Hov",
-              "jobTitle": "Tannlege"
-            }
+            "telephone": "+4761323070"
           }
         ]
       }
@@ -111,101 +105,121 @@
     <meta http-equiv="cache-control" content="max-age=31536000" />
 
     <!-- Preload self-hosted fonts (eliminates render-blocking Google Fonts) -->
-    <link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-600.woff2" crossorigin />
-    <link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-italic-400.woff2" crossorigin />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="fonts/cormorant-garamond-600.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="fonts/cormorant-garamond-italic-400.woff2"
+      crossorigin
+    />
 
     <!-- Preload LCP image -->
     <link rel="preload" as="image" href="marit.webp" type="image/webp" />
-
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header class="site-header">
       <div class="header-inner">
         <a href="#" class="site-brand">
-          <span class="brand-name">Marit Irgens Hov</span>
-          <span class="brand-sub">Tannlege</span>
+          <span class="brand-name">Tannlege Marit Irgens Hov</span>
         </a>
       </div>
     </header>
 
     <main>
-    <section id="om" class="fade-up">
-      <img
-        src="marit.webp"
-        alt="Tannlege Marit Irgens Hov"
-        class="dentist-photo"
-        width="400"
-        height="533"
-        fetchpriority="high"
-      />
-      <h1 class="hero-title">Trygg tannbehandling<span class="hero-sub">— med omtanke</span></h1>
-      <p>
-        Hos Marit møter du en erfaren og omsorgsfull tannlege som setter din
-        tannhelse og trygghet i fokus. Du får moderne tannbehandling i trygge
-        omgivelser — enten du trenger en vanlig kontroll, akutt hjelp eller mer
-        avansert behandling.
-      </p>
-      <p class="location-note">Marit jobber på Frogner i Oslo og på Harestua i Lunner.</p>
-    </section>
+      <section id="om" class="fade-up">
+        <img
+          src="marit.webp"
+          alt="Tannlege Marit Irgens Hov"
+          class="dentist-photo"
+          width="400"
+          height="533"
+          fetchpriority="high"
+        />
+        <h1 class="hero-title">
+          Trygg tannbehandling<span class="hero-sub">— med omtanke</span>
+        </h1>
+        <p>
+          Hos Marit møter du en erfaren og omsorgsfull tannlege som setter din
+          tannhelse og trygghet i fokus. Du får moderne tannbehandling i trygge
+          omgivelser — enten du trenger en vanlig kontroll, akutt hjelp eller
+          mer avansert behandling.
+        </p>
+        <p class="location-note">
+          Marit jobber på Frogner i Oslo og på Harestua i Lunner.
+        </p>
+      </section>
 
-    <section id="behandling" class="fade-up">
-      <h2>Behandling</h2>
-      <p>Det tilbys et bredt spekter av behandlinger, blant annet:</p>
-      <ul class="service-list">
-        <li>Undersøkelse og forebyggende behandling</li>
-        <li>Tannrens og behandling av tannkjøttsykdom</li>
-        <li>Fyllinger og rotfylling</li>
-        <li>Kroner og broer</li>
-        <li>Proteser</li>
-        <li>Bittheving</li>
-        <li>Akutt tannbehandling og ekstraksjoner</li>
-        <li>Tannbleking</li>
-      </ul>
-      <div class="nav-note">
-        Marit hjelper deg med kostnadsoverslag til NAV-søknad for økonomisk
-        sosialstønad ved nødvendig tannbehandling. Ta kontakt, så utarbeides
-        nødvendig dokumentasjon og du får veiledning i prosessen.
-      </div>
-    </section>
-
-    <section id="time" class="fade-up">
-      <h2>Bestill time</h2>
-      <p>
-        Du kan bestille time ved å ringe oss i kontortiden, eller sende en
-        e-post så tar vi kontakt for å avtale tidspunkt.
-      </p>
-      <p>
-        Vi etterstreber å tilby time raskt, og forsøker alltid å finne et
-        tidspunkt som passer deg.
-      </p>
-    </section>
-
-    <section id="kontakt" class="fade-up">
-      <h2>Kontaktinformasjon</h2>
-      <div class="info-grid">
-        <div class="info-block">
-          <h3>Frogner</h3>
-          <address>
-            Tannlege Elisabeth Aurstad Riksen AS<br />
-            Bygdøy Allé 58B, 0265 Oslo<br /><br />
-            Tlf: <a href="tel:22448613">22 44 86 13</a><br />
-            E-post: <a href="mailto:tannlege-mih@outlook.com">tannlege-mih@outlook.com</a>
-          </address>
+      <section id="behandling" class="fade-up">
+        <h2>Behandling</h2>
+        <p>Det tilbys et bredt spekter av behandlinger, blant annet:</p>
+        <ul class="service-list">
+          <li>Undersøkelse og forebyggende behandling</li>
+          <li>Tannrens og behandling av tannkjøttsykdom</li>
+          <li>Fyllinger og rotfylling</li>
+          <li>Kroner og broer</li>
+          <li>Proteser</li>
+          <li>Bittheving</li>
+          <li>Akutt tannbehandling og ekstraksjoner</li>
+          <li>Tannbleking</li>
+        </ul>
+        <div class="nav-note">
+          Marit hjelper deg med kostnadsoverslag til NAV-søknad for økonomisk
+          sosialstønad ved nødvendig tannbehandling. Ta kontakt, så utarbeides
+          nødvendig dokumentasjon og du får veiledning i prosessen.
         </div>
+      </section>
 
-        <div class="info-block">
-          <h3>Harestua</h3>
-          <address>
-            Harestua tannklinikk<br />
-            Vannebos veg 159, 2743 Harestua<br /><br />
-            Tlf: <a href="tel:61323070">61 32 30 70</a><br />
-            E-post: <a href="mailto:harestuatannklinikk@gmail.com">harestuatannklinikk@gmail.com</a>
-          </address>
+      <section id="time" class="fade-up">
+        <h2>Bestill time</h2>
+        <p>
+          Du kan bestille time ved å ringe oss i kontortiden, eller sende en
+          e-post så tar vi kontakt for å avtale tidspunkt.
+        </p>
+        <p>
+          Vi etterstreber å tilby time raskt, og forsøker alltid å finne et
+          tidspunkt som passer deg.
+        </p>
+      </section>
+
+      <section id="kontakt" class="fade-up">
+        <h2>Kontaktinformasjon</h2>
+        <div class="info-grid">
+          <div class="info-block">
+            <h3>Frogner</h3>
+            <address>
+              Tannlege Elisabeth Aurstad Riksen AS<br />
+              Bygdøy Allé 58B, 0265 Oslo<br /><br />
+              Tlf: <a href="tel:22448613">22 44 86 13</a><br />
+              E-post:
+              <a href="mailto:tannlege-mih@outlook.com"
+                >tannlege-mih@outlook.com</a
+              >
+            </address>
+          </div>
+
+          <div class="info-block">
+            <h3>Harestua</h3>
+            <address>
+              Harestua tannklinikk<br />
+              Vannebos veg 159, 2743 Harestua<br /><br />
+              Tlf: <a href="tel:61323070">61 32 30 70</a><br />
+              E-post:
+              <a href="mailto:harestuatannklinikk@gmail.com"
+                >harestuatannklinikk@gmail.com</a
+              >
+            </address>
+          </div>
         </div>
-      </div>
-    </section>
-
+      </section>
     </main>
 
     <footer>&copy; 2026 Tannlege Marit Irgens Hov</footer>
