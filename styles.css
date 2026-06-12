@@ -104,13 +104,6 @@ body {
   letter-spacing: 0.04em;
 }
 
-.brand-sub {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 0.85rem;
-  color: var(--blue);
-  font-style: italic;
-  letter-spacing: 0.08em;
-}
 
 @media (max-width: 580px) {
   .brand-name { font-size: 1rem; }
@@ -301,6 +294,10 @@ section p {
 .fade-up.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up { opacity: 1; transform: none; transition: none; }
 }
 
 /* ── Footer ── */
